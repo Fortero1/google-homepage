@@ -1,153 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google Homepage Lookalike</title>
-</head>
-<body>
-    <style>
-        *, html {
-            margin: 0;
-        }
-
-        .container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            height: 100vh;   
-        }
-
-        .nav-container {
-            display: flex;
-            list-style: none;
-            margin-top: 20px;
-            margin-left: 5px;
-            margin-right: 20px;
-            padding-left: 0;
-        }
-
-        li {
-            padding-left: 15px;
-            font-size: 13px;
-            font-family: arial;
-        }
-
-        a {
-            text-decoration: none;
-            color: #000;
-        }
-
-        .opacity {
-            opacity: 0.75;
-        }
-
-        .nav-container .opacity a:hover {
-            text-decoration: underline;
-        }
-
-        .push {
-            margin-left: auto;
-            margin-right: 10px;
-            display: flex;
-        }
-
-        .push img {
-            margin: 0 10px;
-        }
-
-        .apps-icon {
-            height: 16px;
-            width: 16px;
-            opacity: 0.55;
-        }
-
-        .apps-icon:hover {
-            opacity: 1;
-        }
-
-        .sign-in {
-            background-color: #4285f4;
-            padding: 7px 12px 7px 12px;
-            color: #fff;
-            font-weight: 900;
-            border-radius: 2px;
-            cursor: pointer;
-        }
-        
-        .search {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-            bottom: 400px;
-            border: 1px solid #dfe1e5;
-            border-radius: 24px;
-            height: 44px;
-            width: 482px;
-            margin: auto;
-        }
-
-        .search-hover {
-            -webkit-box-shadow: -1px -1px 12px 0px rgba(223,225,229,1);
-            -moz-box-shadow: -1px -1px 12px 0px rgba(223,225,229,1);
-            box-shadow: -1px -1px 12px 0px rgba(223,225,229,1);
-        
-        }
-
-        input {
-            border: none;
-            width: 85%;
-            font-size: 18px;
-        }
-
-        input:focus {
-            outline: none;
-        }
-
-        input[type="search"]::-webkit-search-decoration,
-        input[type="search"]::-webkit-search-cancel-button,
-        input[type="search"]::-webkit-search-results-button,
-        input[type="search"]::-webkit-search-results-decoration {display: none;} 
-
-        .mag-glass {
-            height: 15px;
-            width: 15px;
-            color: #9aa0a6;
-            margin-left: 15px;
-            margin-right: 15px;
-        }
-
-        .microphone {
-            height: 25px;
-            width: 25px;
-            margin-right: 15px;
-        }
-
-    </style>
+<meta="UTF-8">
 <html>
-    <meta="utf-8">
-    <div class="container">
-        <div class="google">
+    <body>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Store</a></li>
+                <div class="push">
+                <li><a href="#">Gmail</a></li>
+                <li><a href="#">Images</a></li>
+                <li class="apps-icon"><a href="#"><img src="images/googleBlack.png" alt="Google Apps Icon"></a></li>
+                <li class="sign-in"><a href="#">Sign In</a></li>
+                </div>    
+            </ul>
+        </nav>
+        <div class=logo>
             <img src="images/google.png" alt="Google Logo">
         </div>
-    </div>    
-        <div class="search">
-            <img src=images/magGlass.png alt="Google Magnifying Glass" class="mag-glass">
+        <div class="search-bar">
+            <img src="images/magGlass.png" alt="Magnifying Glass" class="magnifying-glass">
             <input type="search">
-            <img src=images/googleMic.png alt="Google Microphone" class="microphone">
+            <img src="images/googleMic.png" alt="Microphone" class="microphone">
         </div>
-    <nav>
-        <ul class="nav-container">
-            <li class="opacity"><a href="#">About</a></li>
-            <li class="opacity"><a href="#">Store</a></li>
-            <div class="push"><li class="opacity"><a href="#">Gmail</a></li>
-            <li class="opacity"><a href="#">Images</a></li>
-            <li><a href="#"><img src="images/googleBlack.png" alt="Google Apps Icon" class="apps-icon"></a></li>
-            <li class="sign-in"><a href="#">Sign In</a></li>
+        <div class="buttons">
+            <a href="#"><button>Google Search</button></a>
+            <a href="#"><button>I'm Feeling Lucky</button></a>
         </div>
-        </ul>
-    </nav>
-</body>
+        <footer class="footer">
+            <ul>
+                <li><a href="#">Advertising</a></li>
+                <li><a href="#">Business</a></li>
+                <li><a href="#">How Search Works</a></li>
+                <div class="push">
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Settings</a></li>
+                </div>
+            </ul>
+        </footer>
+    </body>    
 </html>
